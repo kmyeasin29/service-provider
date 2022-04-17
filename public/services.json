@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "Name": "Dental Implants",
+        "name": "Dental Implants",
         "price": 700,
         "image": "https://i.ibb.co/SwB7wb0/home-services-2.jpg",
         "details": "Proactively fabricate one-to-one materials via effective e-business services processes."
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "Name": "Surgery",
+        "name": "Surgery",
         "price": 800,
         "image": "https://i.ibb.co/Jqss6Gm/home-services-3.jpg",
         "details": "Proactively fabricate one-to-one materials via effective e-business services processes."
@@ -25,7 +25,39 @@
     },
     {
         "id": 4,
-        "Name": "Teeth Whitening",
+        "name": "Teeth Whitening",
+        "price": 1000,
+        "image": "https://i.ibb.co/KG4h7yN/home-services-4.jpg",
+        "details": "Distinctively re-engineer revolutionary meta-services and premium architectures."
+
+    },
+    {
+        "id": 1,
+        "name": "Dental Services",
+        "price": 500,
+        "image": "https://i.ibb.co/hChVwg3/home-services.jpg",
+        "details": "Globally harness multimedia based collaboration and idea haring with backend products."
+
+    },
+    {
+        "id": 2,
+        "name": "Dental Implants",
+        "price": 700,
+        "image": "https://i.ibb.co/SwB7wb0/home-services-2.jpg",
+        "details": "Proactively fabricate one-to-one materials via effective e-business services processes."
+
+    },
+    {
+        "id": 3,
+        "name": "Surgery",
+        "price": 800,
+        "image": "https://i.ibb.co/Jqss6Gm/home-services-3.jpg",
+        "details": "Proactively fabricate one-to-one materials via effective e-business services processes."
+
+    },
+    {
+        "id": 4,
+        "name": "Teeth Whitening",
         "price": 1000,
         "image": "https://i.ibb.co/KG4h7yN/home-services-4.jpg",
         "details": "Distinctively re-engineer revolutionary meta-services and premium architectures."
