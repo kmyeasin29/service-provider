@@ -9,6 +9,8 @@ import Blogs from './Components/Blogs/Blogs';
 import About from './Components/About/About';
 import NotFound from './Components/NotFound/NotFound';
 import Register from './Components/Register/Register';
+import CheckOut from './Components/CheckOut/CheckOut';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -22,6 +24,11 @@ function App() {
         <Route path='/About' element={<About></About>}></Route>
         <Route path='/Register' element={<Register></Register>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
+        <Route path='/CheckOut' element={
+          <RequireAuth>
+            <CheckOut></CheckOut>
+          </RequireAuth>
+        }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

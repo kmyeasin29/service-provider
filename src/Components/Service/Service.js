@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
@@ -11,7 +12,7 @@ const Service = ({ service }) => {
                     <h5 class='card-title'>{name}</h5>
                     <h4 class="card-text">${price}</h4>
                     <p class="card-text">{details}</p>
-                    <a href="#" class="btn btn-info">Get Appoinment</a>
+                    <Link to='/CheckOut' class="btn btn-info">Get Appoinment</Link>
                 </div>
             </div>
             {/* <img width={250} src={image} alt="" />

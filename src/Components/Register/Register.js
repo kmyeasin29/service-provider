@@ -36,7 +36,7 @@ const Register = () => {
         <div className='mx-auto w-50 container mt-5 border rounded p-5'>
             <h2 className='text-center text-primary'>REGISTER</h2>
             <Form onSubmit={handleCreateUser}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control onBlur={handleNameBlur} type="text" placeholder="Your Name" required />
                 </Form.Group>
