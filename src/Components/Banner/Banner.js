@@ -8,7 +8,7 @@ const Banner = () => {
         setIndex(selectedIndex);
     };
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel activeIndex={index} onSelect={handleSelect} className="col-sm-12">
             <Carousel.Item>
                 <img
                     className="d-block w-100" height={580}
