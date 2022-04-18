@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [JOHN'S CARE](https://sweet-cuchufli-64aeb7.netlify.app/).
+#Live Link: [JOHN'S CARE](https://sweet-cuchufli-64aeb7.netlify.app/).
 
 ## Project Name: John's Dental Care
 
