@@ -4,6 +4,7 @@ const Blogs = () => {
     return (
         <div>
             <h2>My Blogs</h2>
+            
         </div>
     );
 };
