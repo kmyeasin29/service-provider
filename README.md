@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [JOHN'S CARE](https://sweet-cuchufli-64aeb7.netlify.app/).
 
 ## Project Name: John's Dental Care
 
