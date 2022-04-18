@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { sendEmailVerification } from 'firebase/auth';
 const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -11,7 +12,7 @@ const Register = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {useSendEmailVerification: true})
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth)
 
     const handleNameBlur = event => {
         setName(event.target.value)
@@ -22,6 +23,12 @@ const Register = () => {
     const handlePasswordBlur = event => {
         setPassword(event.target.value)
     }
+    const emailVerify=()=>{
+        sendEmailVerification(auth.currentUser)
+        .then(()=>{
+            console.log('Verification Email Sent');
+        })
+    }
     if (user) {
         navigate('/Home')
     }
@@ -31,7 +38,13 @@ const Register = () => {
             setError('Your Passwor is less than 8 character')
             return
         }
-        createUserWithEmailAndPassword(email, password)
+        else{
+            createUserWithEmailAndPassword(email, password)
+            .then(result=>{
+                emailVerify()
+            })
+        
+        }
     }
     return (
         <div className='mx-auto w-50 container mt-5 border rounded p-5'>
